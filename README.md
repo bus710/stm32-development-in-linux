@@ -240,6 +240,20 @@ If you don't want to build every time you save,
 - Go to Project
 - Disable Build Automatically
 
+## Tips for Windows Users
+  
+Almost same things can be done to have the same environment except:
+- System Environment and the **Path** should have ARM-GCC's location (C:\Program Files (x86)\GNU Tools ARM Embedded\VERSION_CAN_DIFF\bin)
+- System Environment and the **Path** should have JLink's location (C:\Program Files (x86)\SEGGER\JLink_VERSION_CAN_DIFF)
+- System Environment and the **Path** should have MSYS2's location (C:\msys64\usr\bin) 
+- System Environment and the **MSYS2_PATH_TYPE** should have its value as **inherit**  
+
+Also in the MSYS2 terminal, enter these to get make
+```
+$ pacman -Syuu 
+$ pacman -S tar git tree vim base-devel
+```
+
 ----
 
 ## Conclusion
