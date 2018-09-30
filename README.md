@@ -50,6 +50,10 @@ $ sudo apt install gcc-arm-embedded
 $ arm-none-eabi-gcc -v
 ```
 
+Tips:
+- https://launchpad.net/gcc-arm-embedded
+- https://developer.arm.com/open-source/gnu-toolchain/gnu-rm
+
 ### Get JLink Package
 
 Download **J-Link Software and Documentation pack for Linux, DEB Installer, 64-bit** from [https://www.segger.com/downloads/jlink/\#J-LinkSoftwareAndDocumentationPack](https://www.segger.com/downloads/jlink/#J-LinkSoftwareAndDocumentationPack)
