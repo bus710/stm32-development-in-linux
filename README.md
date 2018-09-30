@@ -29,6 +29,7 @@ If you need/want to have STM32 development environment in Linux...
 * Set Build Option and Parser Configuration
 * Set Debug Configuration in Eclipse
 * Tips for Eclipse  
+* Tips for Windows Users  
 * Conclusion
 
 ---
