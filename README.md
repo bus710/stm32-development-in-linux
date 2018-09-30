@@ -217,12 +217,24 @@ Finally it is time to try debugging.
 
 ![](/assets/20180201f.png)
 
-## Set Debug Launcher in C/C++ Perspective
+## Tips for Eclipse  
 
 Sometimes C/C++ Perspective doesn't show Debug Launch button on its tap.
-
 * Go to Window => Perspective => Customize Perspective => Tool Bar Visibility
 * Activate Debug Item in the list.
+
+  
+If Eclipse's syntax check is too annoying for you, go to:
+- Project Property >> C/C++ General >> Code Analasys
+- And disable the options.
+  
+If Eclipse's formatter annoys,
+- Go to Window >> Preference >> C/C++ >> Editor >> Save actions
+- Disable Format source code.  
+  
+If you don't want to build every time you save,
+- Go to Project
+- Disable Build Automatically
 
 ----
 
