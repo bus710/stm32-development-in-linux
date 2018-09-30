@@ -145,7 +145,7 @@ $ make
 
 To install minimum dev environment:
 
-* Get Eclipse Neon 3 \(Not Oxygen or Luna\).
+* Get Eclipse CDT Oxygen 3 (as of 2018)
 * Extract it and run Eclipse\_Inst
 * Once it is done, go help => Market Place.
 * Search and install **GNU-MCU-Eclipse** and **Vrapper**
