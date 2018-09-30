@@ -24,11 +24,11 @@ If you need/want to have STM32 development environment in Linux...
 * Get STM32CubeMX
 * Generate an Example
 * Compile the Example
-* Get Eclipse (GNU-MCU-Eclipse and vrapper Packages)
+* Get Eclipse (GNU-MCU-Eclipse and Vrapper Packages)
 * Import the Example to Eclipse
 * Set Build Option and Parser Configuration
 * Set Debug Configuration in Eclipse
-* Set Debug Launcher in C/C++ Perspective
+* Tips for Eclipse  
 * Conclusion
 
 ---
