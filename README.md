@@ -20,7 +20,7 @@ If you need/want to have STM32 development environment in Linux...
 * Get Basic Tools
 * Get ARM-GCC Compiler
 * Get JLink Package
-* Get JRE (Oracle's)
+* Get OpenJDK
 * Get STM32CubeMX
 * Generate an Example
 * Compile the Example
@@ -83,25 +83,11 @@ Tip: After installing, reboot may require.
 
 ## Get JRE
 
-STM32CubeMX and Eclipse require JRE.    
-Currently JRE 8 is the mostly used version. - [Java SE Runtime Environment 8 Downloads](http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)  
-Also currently jre-8u181-linux-x64.tar.gz is the latest version.  
-  
-Once download is done:
-```
-$ sudo mkdir -p -v /opt/java/64
-$ tar -zxvf jre-8u181-linux-x64.tar.gz
-$ sudo mv -v jre1.8.* /opt/java/64
-$ sudo update-alternatives --install 
-        "/usr/bin/java" 
-        "java" 
-        "/opt/java/64/jre1.8.181/bin/java" 1
-$ sudo update-alternatives 
-        --set java 
-        /opt/java/64/jre1.8.181/bin/java
-``` 
+STM32CubeMX and Eclipse require 32bit JRE.    
 
-Above commands replace the open-java to Oracle-java.
+```
+$ sudo apt install openjdk-11-jre:i386
+``` 
 
 ## Get STM32CubeMX
 
@@ -118,7 +104,6 @@ $ sudo ./SetupSTM32CubeMX-4.27.0.linux
   
 Tips
 - After installing JRE, please use a new terminal for STM32CubeMX installation.
-- Also, in case of "No such file or directory" error has shown, install 32 bit JRE.
 
 ## Generate an Example
 
