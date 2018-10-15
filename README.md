@@ -116,7 +116,9 @@ After download, extract the zip file and run its installer as below.
 $ sudo ./SetupSTM32CubeMX-4.27.0.linux
 ```
   
-Tip: After installing JRE, please use a new terminal for STM32CubeMX installation.
+Tips
+- After installing JRE, please use a new terminal for STM32CubeMX installation.
+- Also, in case of "No such file or directory" error has shown, install 32 bit JRE.
 
 ## Generate an Example
 
