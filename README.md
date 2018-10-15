@@ -81,7 +81,7 @@ $ connect
 
 Tip: After installing, reboot may require.
 
-## Get JRE
+## Get OpenJDK
 
 STM32CubeMX and Eclipse require 32bit JRE.    
 
