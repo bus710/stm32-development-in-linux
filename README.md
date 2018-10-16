@@ -139,7 +139,7 @@ $ make
 
 To install minimum dev environment:
 
-* Get Eclipse CDT Oxygen (as of 2018, eclipse-cpp-2018-09-linux-gtk-x86_64.tar.gz)
+* Get Eclipse CDT Oxygen (as of 2018, 9.4.3 is the latest) from [here](http://www.eclipse.org/cdt/downloads.php)
 * Extract it and move it to somewhere you want.
 * Run Eclipse in the directory.
 * Once it is done, go help => Market Place.
