@@ -140,10 +140,10 @@ $ make
 To install minimum dev environment:
 
 * Get Eclipse CDT Oxygen (eclipse-cpp-oxygen-3-win32-x86_64.zip is the latest as of 2018) from [here](http://www.eclipse.org/downloads/packages/release/oxygen/3/eclipse-ide-cc-developers)
-* Oxygen is not the latest Eclipse CDT but the plug-ins we will use deosn't support the newer version of Eclipse.
+* Oxygen is not the latest Eclipse CDT but the plug-ins we will use doesn't support the newer version of Eclipse.
 * Extract it and move it to somewhere you want.
 * Run Eclipse in the directory.
-* Once it is done, go help => Market Place.
+* Once it is done, go to help => Market Place.
 * Search and install **GNU-MCU-Eclipse** and **Vrapper**
 
 To set the tool chain and j-link's path:
