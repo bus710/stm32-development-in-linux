@@ -243,13 +243,13 @@ $ pacman -S tar git tree vim base-devel
 
 ## Conclusion
 
-So far we followed this short manual to set up nRF development environment in Linux.
+So far we followed this short manual to set up STM32 MCU development environment in Linux.
 
 In the manual,
 
 * Downloaded the compiler, IDE, and SDK
-* Learned how to make your own project by scratching
-* Compiled and debugged the project.
+* Learned how to make your own project by STM32CubeMX
+* Compiled and debugged the project
 
 As software changes everyday, the setup can be changed as well. However the basic step might be not very different.
 
