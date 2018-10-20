@@ -81,7 +81,7 @@ Tip: After installing, reboot may require.
 
 ## Get OpenJDK
 
-STM32CubeMX and Eclipse require 32bit JRE.  
+STM32CubeMX requires 32bit JRE.  
 
 ```
 $ sudo apt install openjdk-11-jre:i386
