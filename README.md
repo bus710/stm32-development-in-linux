@@ -135,7 +135,7 @@ $ make
   
 ## Get VSCode and some useful extentions
 
-If the compilation seems good, now install VSCode and some extensions. [https://code.visualstudio.com/](>>>)
+If the compilation seems good, now install VSCode and some extensions from ([>>>](https://code.visualstudio.com/)).
   
 Must have extensions are:
 - C/C++
@@ -156,8 +156,6 @@ By filling the json file, we can invoke make and make clean with shortcuts.
   
 ```json
 {
-    // See https://go.microsoft.com/fwlink/?LinkId=733558
-    // for the documentation about the tasks.json format
     "version": "2.0.0",
     "tasks": [
         {
@@ -188,14 +186,48 @@ By filling the json file, we can invoke make and make clean with shortcuts.
 }
 ```
   
-With this configuration, we can use *CTRL+SHOFT+B* to open the task dialog and run make or clean.  
+With this configuration, we can use *CTRL+SHIFT+B* to open the task dialog and run make or clean.  
   
-The detail can be found from MS' document [https://blogs.msdn.microsoft.com/vcblog/2016/10/24/building-your-c-application-with-visual-studio-code/](>>>)  
+The detail can be found from MS' document ([>>>](https://blogs.msdn.microsoft.com/vcblog/2016/10/24/building-your-c-application-with-visual-studio-code/)).
       
 ## Set Launch.json for debugging
-
-## Tips for Windows Users
   
+To generate a launch.json, 
+- Press *CTRL+Shift+P*. 
+- Then type *launch*.
+- Lastly click *Debug: Open launch.json*.
+  
+Above action generates a file(Tasks.json) under .vscode.  
+By filling the json file, we can invoke make and make clean with shortcuts.
+  
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/THE_EXECUTABLE_NAME.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "device": "STM32F446RE",
+            "interface": "swd",
+        }
+    ]
+}
+```
+  
+Two things need to be updated based on your project:
+- executable: THE_EXECUTABLE_NAME should ba updated.
+- device: the depends on the target MCU.
+  
+The detail can be found from the extension's website ([>>>](https://marcelball.ca/projects/cortex-debug/cortex-debug-launch-configurations/)).  
+  
+## Tips for Windows Users
+
+First of all, install bash and make. I prefer MSYS2 ([>>>](https://www.msys2.org/)).
+
 Almost same things can be done to have the same environment except:
 - System Environment and the **Path** should have ARM-GCC's location (C:\Program Files (x86)\GNU Tools ARM Embedded\VERSION_CAN_DIFF\bin)
 - System Environment and the **Path** should have JLink's location (C:\Program Files (x86)\SEGGER\JLink_VERSION_CAN_DIFF)
