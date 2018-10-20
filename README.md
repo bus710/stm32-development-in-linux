@@ -82,17 +82,14 @@ Tip: After installing, reboot may require.
 ## Get OpenJDK
 
 STM32CubeMX and Eclipse require 32bit JRE.  
-Also, there is a bug in using Eclipse's marketplace, and thus, ca-certificates-java should be installed.
 
 ```
 $ sudo apt install openjdk-11-jre:i386
-$ sudo apt install ca-certificates-java
 ``` 
 
 ## Get STM32CubeMX
 
-STM32CubeMX is a util that can be used for biler-plating based on hardeware.  
-[https://www.st.com/en/development-tools/stm32cubemx.html](https://www.st.com/en/development-tools/stm32cubemx.html)  
+STM32CubeMX is a util that can be used for biler-plating based on hardeware ([>>>](https://www.st.com/en/development-tools/stm32cubemx.html)).
   
 ST doesn't provide an open link for the util but we need to request.  
 After the request, ST will send an email to us.  
@@ -147,9 +144,9 @@ Onde installation is done, open the folder where the project is.
 ## Set Tasks.json for make/clean  
   
 To generate a Tasks.json, 
-- Press *CTRL+Shift+P*. 
-- Then type *task*.
-- Lastly click *Tasks: Configure Task*.
+- Press **CTRL+Shift+P**. 
+- Then type **task**.
+- Lastly click **Tasks: Configure Task**.
   
 Above action generates a folder(.vscode) and a file(Tasks.json) under .vscode.  
 By filling the json file, we can invoke make and make clean with shortcuts.
@@ -186,16 +183,16 @@ By filling the json file, we can invoke make and make clean with shortcuts.
 }
 ```
   
-With this configuration, we can use *CTRL+SHIFT+B* to open the task dialog and run make or clean.  
+With this configuration, we can use **CTRL+SHIFT+B** to open the task dialog and run make or clean.  
   
 The detail can be found from MS' document ([>>>](https://blogs.msdn.microsoft.com/vcblog/2016/10/24/building-your-c-application-with-visual-studio-code/)).
       
 ## Set Launch.json for debugging
   
 To generate a launch.json, 
-- Press *CTRL+Shift+P*. 
-- Then type *launch*.
-- Lastly click *Debug: Open launch.json*.
+- Press **CTRL+Shift+P**. 
+- Then type **launch**.
+- Lastly click **Debug: Open launch.json**.
   
 Above action generates a file(launch.json) under .vscode.  
 By filling the json file, we can invoke the arm-none-eabi-gdb and JLink GDB server.  
@@ -218,7 +215,9 @@ By filling the json file, we can invoke the arm-none-eabi-gdb and JLink GDB serv
 }
 ```
   
-Two things need to be updated based on your project:
+With this configuration, we can use **F5** to start a debugging session.  
+  
+Two things need to be adjusted based on your project:
 - executable: THE_EXECUTABLE_NAME should ba updated.
 - device: the depends on the target MCU.
   
