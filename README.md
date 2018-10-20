@@ -102,7 +102,7 @@ After download, extract the zip file and run its installer as below.
 $ sudo ./SetupSTM32CubeMX-4.27.0.linux
 ```
   
-Tips
+Tip
 - After installing JRE, please use a new terminal for STM32CubeMX installation.
 
 ## Generate an Example
@@ -197,10 +197,10 @@ To generate a launch.json,
 - Then type *launch*.
 - Lastly click *Debug: Open launch.json*.
   
-Above action generates a file(Tasks.json) under .vscode.  
-By filling the json file, we can invoke make and make clean with shortcuts.
+Above action generates a file(launch.json) under .vscode.  
+By filling the json file, we can invoke the arm-none-eabi-gdb and JLink GDB server.  
   
-```
+```json
 {
     "version": "0.2.0",
     "configurations": [
