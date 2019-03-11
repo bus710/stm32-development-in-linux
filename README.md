@@ -136,6 +136,7 @@ If the compilation seems good, now install VSCode and some extensions from ([>>>
   
 Must have extensions are:
 - C/C++
+- C++ Intellisense
 - Cortex-Debug
 - Vim (might be good for vim users but not for everyone)
   
