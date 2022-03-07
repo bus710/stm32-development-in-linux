@@ -1,6 +1,6 @@
 # stm32-development-in-linux
 
-If you want/need to develop STM32 MCUs in Linux...
+If you want/need to develop STM32 MCUs in Linux... (not for running Linux on the MCU)
 
 ## Writer
 
