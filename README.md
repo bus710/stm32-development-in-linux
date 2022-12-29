@@ -2,11 +2,6 @@
 
 If you want/need to develop STM32 MCUs in Linux... (not for running Linux on the MCU)
 
-## Writer
-
-* SJ Kim
-* bus710@gmail.com
-
 ## Environment
 
 * Mint Linux 18.3 64bit \(or equivalent distro\)
